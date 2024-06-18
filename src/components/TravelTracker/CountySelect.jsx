@@ -36,10 +36,10 @@ function SelectCounty() {
     const userId = localStorage.getItem('userId'); 
 
     useEffect(() => {
-      const fetchPlaces = async () => { // get all traveled places
+      const fetchPlaces = async () => { // get all traveled place
 
           try {
-              const response = await axios.get(`https://travel-tracker-application.netlify.app/tracker?userId=${userId}`);
+              const response = await axios.get(`https://travel-app-backend-uco2.onrender.com/tracker?userId=${userId}`);
               setPlacesTraveled(response.data.places);
           } catch (error) {
               console.error('Error fetching places:', error);
@@ -56,7 +56,7 @@ const handleSubmit = async (e) => {
   if (selectedCountry && city) {
       const newPlace = `${selectedCountry.label}, ${city}`;
       try {
-          const response = await axios.post('https://travel-tracker-application.netlify.app/tracker', {
+          const response = await axios.post('https://travel-app-backend-uco2.onrender.com/tracker', {
               userId,
               newPlace
           });
@@ -77,7 +77,7 @@ const handleSubmit = async (e) => {
 // DELETE place
 const handleDelete = async (index) => {
   try {
-      const response = await axios.delete(`https://travel-tracker-application.netlify.app/tracker/${userId}/places/${index}`);
+      const response = await axios.delete(`https://travel-app-backend-uco2.onrender.com/tracker/${userId}/places/${index}`);
       if (response.data.success) {
           const updatedPlaces = placesTraveled.filter((_, i) => i !== index);
           setPlacesTraveled(updatedPlaces);
@@ -94,7 +94,7 @@ const handleEdit = async (index) => {
   const newCity = prompt('Enter new city name:');
   if (newCity) {
       try {
-          const response = await axios.put(`https://travel-tracker-application.netlify.app/tracker/${userId}/places/${index}`, {
+          const response = await axios.put(`https://travel-app-backend-uco2.onrender.com/tracker/${userId}/places/${index}`, {
               newCity
           });
           if (response.data.success) {
