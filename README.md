@@ -37,7 +37,15 @@ npm install
 3) Start the development server:
 npm run dev 
 
+# GIT links for front-end and back-end:
+Frontend:
+https://github.com/OlenaShevelenko31/travel-app-frontend
 
+Backend: 
+https://github.com/OlenaShevelenko31/travel-app-backend
+
+Frontend + Backend :
+https://github.com/OlenaShevelenko31/travel-app
 
 
 
