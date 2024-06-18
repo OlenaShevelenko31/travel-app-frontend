@@ -1,0 +1,27 @@
+/* body{
+    background-image: url('https://img.freepik.com/free-psd/vacation-elements_23-2147620150.jpg?t=st=1718638247~exp=1718641847~hmac=a713e8b0bd0ab75093fd7f62af71c022b9ddd8da52b777e030eed8260bce06d2&w=2000');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+ .videoTag{
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    
+ }
+ .contactForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+.contactForm > label{
+    color: wheat;
+}

@@ -1,0 +1,24 @@
+
+ /*  FactsPost component */
+ .factsBox{
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    border: 1px solid black;
+}
+.factsBox > img {
+    width: 400px;
+    height: 300px;
+}
+.factBackground{
+    background-clip: url;
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+/* ------------------------- */
+
