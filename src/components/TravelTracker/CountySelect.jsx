@@ -11,7 +11,7 @@ const CountrySelect = ({ selectedCountry, onChange }) => {
 
     useEffect(() => {
         fetch(
-          "http://valid.layercode.workers.dev/list/countries?format=select&flags=true&value=code"
+          "https://valid.layercode.workers.dev/list/countries?format=select&flags=true&value=code"
         )
           .then((response) => response.json())
           .then((data) => {
