@@ -13,7 +13,7 @@ function Register() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8000/login', { email, password });
+      const response = await axios.post('https://travel-app-backend-uco2.onrender.com/login', { email, password });
       const { success, message, userId } = response.data;
 
       if (success) {

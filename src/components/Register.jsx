@@ -15,7 +15,7 @@ function Register() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const result = await axios.post('http://localhost:8000/', {name, email, password });
+      const result = await axios.post('https://travel-app-backend-uco2.onrender.com/', {name, email, password });
       console.log(result);
       navigate('/login');
     } catch (err) {
