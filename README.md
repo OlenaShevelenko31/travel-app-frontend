@@ -21,7 +21,7 @@ The Travel Tracker App is a web application designed to help users manage their 
 
 **Client:** HTML, CSS, React
 
-**Server:** Node, Express, MondoDB
+**Server:** Node, Express, MongoDB
 
 
 ## Installation

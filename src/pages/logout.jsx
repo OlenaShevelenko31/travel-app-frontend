@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 const Logout = () => {
     useEffect(() => {
         localStorage.removeItem('userId'); 
-        window.location.href = '/https://travel-app-backend-uco2.onrender.com/login'; 
+        window.location.href = 'https://travel-tracker-application.netlify.app/'; 
     }, []);
 
     return (
