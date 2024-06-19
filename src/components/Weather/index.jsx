@@ -84,8 +84,8 @@ function Weather() {
   };
 
   return (
-    <Container >
-      <div className={styles.container} style={{backgroundColor: "bisque"}}>
+    <Container  className={styles.container}>
+      <div className={styles.container} >
         <div className={styles.header} >
           <h1>Weather for today:</h1>
           <input
@@ -122,15 +122,13 @@ function Weather() {
               <img src={weatherData.current.condition.icon} alt="Weather Icon" />
               <p id="wind_mph">Wind in mph: {Math.round(weatherData.current.wind_mph)}<span>mph</span></p>
               <p id="wind_kph">Wind in kph: {Math.round(weatherData.current.wind_kph)}<span>kph</span></p>
-              <p id="feelslikeinc">Feels like {Math.round(weatherData.current.feelslike_c)}<span>°C</span></p>
-              <p id="feelslikeinf">Feels like {Math.round(weatherData.current.feelslike_f)}<span>°F</span></p>
               <p id="pressure_mb">Pressure (mb): {weatherData.current.pressure_mb} mb</p>
               <p id="pressure_in">Pressure (in): {weatherData.current.pressure_in} inHg</p>
               <p id="uv">UV: {weatherData.current.uv}</p>
             </div>
 
             <div className={styles.quotes}>
-              <button onClick={displayAdvice} id="btn2">
+              <button onClick={displayAdvice} className="travel_btn">
                 Click to get an advice:
               </button>
               <p id="quote"></p>

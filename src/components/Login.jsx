@@ -30,7 +30,8 @@ function Register() {
   }
 
   return (
-    <div className='container w-25 bg-warning' >
+    <div className='register' >
+      <div className='register_form'>
       <h1 className="text-center ">Login</h1>
       <form onSubmit={handleSubmit}>
         <input
@@ -47,11 +48,12 @@ function Register() {
           placeholder='password'
           value={password}
         />
-        <button  className="btn btn-primary text-center" type="submit">Login</button>
+        <button  className="form_btn" type="submit">Login</button>
+      <br />
+      <Link to="/" className="form_btn">Register</Link>
       </form>
       <br />
-      <Link to="/" className="d-block btn btn-primary text-center">Register</Link>
-      <br />
+    </div>
     </div>
   );
 }

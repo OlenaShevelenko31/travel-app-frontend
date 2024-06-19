@@ -37,15 +37,17 @@ const Contact = () => {
     <div>
       <Navbar/>
 
-      <div >
-        <form className='contactForm' ref={form} onSubmit={sendEmail}>
-          <label>Name</label>
-          <input type="text" name="user_name"  placeholder='name ... '/>
-          <label>Email</label>
-          <input type="email" name="user_email"placeholder='email ... ' />
-          <label>Message</label>
-          <textarea name="message" placeholder='message ... '/>
-          <input type="submit" value="Send" />
+      <div className='register'>
+        <form className='register_form' ref={form} onSubmit={sendEmail}>
+          <label><em>Name</em></label>
+          <input className='contact_textarea' type="text" name="user_name"  placeholder='name ... '/>
+          <label><em>Email</em></label>
+          <input className='contact_textarea' type="email" name="user_email"placeholder='email ... ' />
+          <label><em>Message</em></label>
+          <textarea className='contact_textarea' name="message" placeholder='message ... '/>
+          <br />
+          <input className='form_btn' type="submit" value="Send" />
+          <br />
         </form>
       </div>
     

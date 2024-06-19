@@ -1,9 +1,4 @@
-/* body{
-    background-image: url('https://img.freepik.com/free-psd/vacation-elements_23-2147620150.jpg?t=st=1718638247~exp=1718641847~hmac=a713e8b0bd0ab75093fd7f62af71c022b9ddd8da52b777e030eed8260bce06d2&w=2000');
-    background-position:center;
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
+
  .videoTag{
     object-fit: cover;
     width: 100vw;
@@ -24,4 +19,79 @@
 }
 .contactForm > label{
     color: wheat;
+}
+.register{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+.register_form{
+    background-color: rgb(119, 175, 236);
+    border-radius: 20px;
+    border: 1px solid black;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+}
+.form_btn {
+    text-decoration: none;
+    color: black;
+    background-color: rgb(218, 229, 238);
+    border-radius: 20px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    width: 100%;
+}
+.travel_form{
+    border-radius: 20px;
+    padding: 40px;
+}
+.travel_input{
+    margin-right: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.travel_btn{
+    background-color: rgb(119, 175, 236);
+    color: black;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.travel_center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.travel_list{
+    border: 1px solid black;
+    border-radius: 20px; 
+    background-color:  rgb(235, 241, 249);    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.travel_list > li{
+    padding: 4px;
+}
+.yellow{
+    background-color: rgb(222, 222, 44);
+}
+.red{
+    background-color: rgb(184, 6, 6);
+}
+.contact_textarea{
+    border-radius: 10px;
 }

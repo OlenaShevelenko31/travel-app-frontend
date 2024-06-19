@@ -3,6 +3,7 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import styles from './LoginStyles/LoginStyles.module.css'
+
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 
 function Register() {
@@ -24,7 +25,8 @@ function Register() {
   }
 
   return (
-    <div className='container w-25 bg-warning'>
+    <div className=' register'>
+      <div className='register_form'>
       <h1 className="text-center ">Register</h1>
       <form onSubmit={handleSubmit}>
         
@@ -49,12 +51,13 @@ function Register() {
           placeholder='password'
           value={password}
         />
-        <button className="btn btn-primary" type="submit" >Register</button>
-      </form>
+        <button className="form_btn" type="submit" >Register</button>
       <br />      
-      <Link className="btn btn-primary d-block text-center pb-2" to="/login">Login Page</Link>
+      <Link className="form_btn" to="/login">Login Page</Link>
+      </form>
       <br />
     </div>
+  </div>
   );
 }
 
