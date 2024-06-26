@@ -1,6 +1,5 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
-import styles from '../FactsPost/Layout.module.css'
 import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 

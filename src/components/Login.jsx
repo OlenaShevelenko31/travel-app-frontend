@@ -30,7 +30,7 @@ function Register() {
   }
 
   return (
-    <div className='register' >
+    <div className='register'style={{display: 'flex', justifyContent: 'center',flexDirection: "row", }} >
       <div className='register_form'>
       <h1 className="text-center ">Login</h1>
       <form onSubmit={handleSubmit}>
@@ -49,9 +49,17 @@ function Register() {
           value={password}
         />
         <button  className="form_btn" type="submit">Login</button>
+        
       <br />
       <Link to="/" className="form_btn">Register</Link>
       </form>
+<br />
+      <Link to="/forgotPassword"> Forgot Password? </Link>
+<br />
+
+      <div style={{color: 'white', textAlign: 'center'}}>
+        <p>Have a question? shevelenko.work@gmail.com</p>
+      </div>
       <br />
     </div>
     </div>
