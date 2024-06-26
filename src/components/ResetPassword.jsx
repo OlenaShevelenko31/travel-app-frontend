@@ -14,7 +14,7 @@ function ResetPassword() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    Axios.post(`https://travel-app-backend-uco2.onrender.com/resetPassword/${token}`, {
+    Axios.post("https://travel-app-backend-uco2.onrender.com/resetPassword/"+token, {
         password,
     }).then(response => {
         if(response.data.status) {
